@@ -1,0 +1,13 @@
+{
+    "source": "127.0.0.1:8000",
+    "destination": "127.0.0.1:9000",
+    "repoinfo": {
+        "a78c418b6a194df1adfe21e5a081c877" : {
+            "branches" : ["all"],
+            "datauuids": [["labels1", "f00c3e2ae9bc458aba9c81c843018f2d"], 
+                          ["labels2", "6792655a84b6418d86b8abff9a4e0e6e"]]
+        }
+    },
+    "kafkaservers": ["127.0.0.1:9092"],
+    "log": "sync.log"
+}
