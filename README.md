@@ -1,6 +1,6 @@
-# dvidsync ![Picture](https://raw.github.com/janelia-flyem/janelia-flyem.github.com/master/images/HHMI_Janelia_Color_Alternate_180x40.png)](http://www.janelia.org)
+# dvidsync [![Picture](https://raw.github.com/janelia-flyem/janelia-flyem.github.com/master/images/HHMI_Janelia_Color_Alternate_180x40.png)](http://www.janelia.org)
 
-** Status: Under Development **
+**Status: Under Development**
 
 This package syncs a subset of operations between two [DVID](https://github.com/janelia-flyem/dvid.git") repositories.  This package assumes two DVID servers pointing to copies of the same database.  The sync service will ensure that certain operations on the source server (like merge, split) will be performed on the destination server.
 
