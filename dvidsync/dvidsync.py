@@ -32,11 +32,15 @@ def sync(config):
             topic2instname["dvidrepo-"+str(repo)+"-inst-"+str(datainfo[1])] = datainfo[0]
     
     # create kafka consumer
-    consumer = KafkaConsumer(*topics, bootstrap_servers=config["kafkaservers"])
-    
-    # TODO: 
-    dummy = consumer.topics()
+    consumer = KafkaConsumer(bootstrap_servers=config["kafkaservers"])
    
+    # assign topic partitions
+    topicparts = []
+    for topic in topics:
+        topicparts.append(TopicPartition(topic=topic, partition=0))
+    consumer.assign(topicparts)
+
+    # set offset (default 0 if nothing yet synced)
     for topic in topics:
         if topic in logdata:
             consumer.seek(TopicPartition(topic=topic, partition=0), logdata[topic])
