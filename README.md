@@ -6,8 +6,8 @@ This package syncs a subset of operations between two [DVID](https://github.com/
 
 Potential applications:
 
-* Enable a separate DVID server to be used exclusively for proofreading training (so as not to interfere with the production server).  The segmentation from the master branch could sync with this training server enabling practice sessions to be performed off of up-to-date segmentation.  The training data does not get synced back to DVID.
-* Keep a cloud-snapshot of a local DVID reconstruction up-to-date to facilitate real-time data release and collaboration.
+* Enable a separate DVID server to be used exclusively for proofreading training (so as not to interfere with the production server).  The segmentation from the master branch could sync with this training server enabling practice sessions to be performed off of up-to-date segmentation.  The training data does not get synced back to the production server.
+* Keep an up-to-date cloud-snapshot of a local DVID reconstruction to facilitate real-time data release and collaboration.
 
 ## Installation
 
