@@ -57,4 +57,4 @@ Sample config json:
 
 * support split and branching operations
 * support google bucket destinations
-* improve robustness of kafka interface
+* improve robustness, exception handling, etc
